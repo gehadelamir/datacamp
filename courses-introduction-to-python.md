@@ -327,5 +327,152 @@ print(type(house))
 ~~~
 ## 
 
+### 4.Subset and conquer
+
+Print out the second element from the areas list (it has the value 11.25).
+
+Subset and print out the last element of areas, being 9.50. Using a negative index makes sense here!
+
+Select the number representing the area of the living room (20.0) and print it out.
+
+## soulation! :
+~~~
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Print out second element from areas
+print(areas[1])
+
+# Print out last element from areas
+print(areas[-1])
+
+# Print out the area of the living room
+print(areas[5])
+
+~~~
+## 
+
+### 5.Subset and calculate
+
+sing a combination of list subsetting and variable assignment, create a new variable, eat_sleep_area, that contains the sum of the area of the kitchen and the area of the bedroom.
+
+Print the new variable eat_sleep_area.
+
+## soulation! :
+~~~
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Sum of kitchen and bedroom area: eat_sleep_area
+eat_sleep_area = areas[3] + areas[-3]
+
+
+# Print the variable eat_sleep_area
+print(eat_sleep_area)
+~~~
+## 
+
+### 6.Slicing and dicing
+
+Use slicing to create a list, downstairs, that contains the first 6 elements of areas.
+
+Do a similar thing to create a new variable, upstairs, that contains the last 4 elements of areas.
+
+Print both downstairs and upstairs using print().
+
+## soulation! :
+~~~
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Use slicing to create downstairs
+downstairs = areas[0:6]
+
+# Use slicing to create upstairs
+upstairs = areas[6:10]
+
+# Print out downstairs and upstairs
+print(downstairs)
+print(upstairs)
+~~~
+## 
+
+### 7.Slicing and dicing (2)
+
+Create downstairs again, as the first 6 elements of areas. This time, simplify the slicing by omitting the begin index.
+
+Create upstairs again, as the last 4 elements of areas. This time, simplify the slicing by omitting the end index.
+
+## soulation! :
+~~~
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Alternative slicing to create downstairs
+downstairs = areas[:6]
+
+# Alternative slicing to create upstairs
+upstairs = areas[6:]
+~~~
+## 
+
+### 8. Replace list elements
+
+Update the area of the bathroom area to be 10.50 square meters instead of 9.50.
+
+Make the areas list more trendy! Change "living room" to "chill zone"
+
+c
+
+### 9.Extend a list
+
+Use the + operator to paste the list ["poolhouse", 24.5] to the end of the areas list. Store the resulting list as areas_1.
+
+Further extend areas_1 by adding data on your garage. Add the string "garage" and float 15.45. Name the resulting list areas_2.
+
+## soulation! :
+~~~
+
+# Create the areas list and make some changes
+areas = ["hallway", 11.25, "kitchen", 18.0, "chill zone", 20.0,
+         "bedroom", 10.75, "bathroom", 10.50]
+
+# Add poolhouse data to areas, new list is areas_1
+areas_1 = areas + ["poolhouse" , 24.5]
+
+# Add garage data to areas_1, new list is areas_2
+areas_2 = areas_1 + ["garage" , 15.45]
+
+~~~
+## 
+
+### 10.Inner workings of lists
+
+Change the second command, that creates the variable areas_copy, such that areas_copy is an explicit copy of areas. 
+
+After your edit, changes made to areas_copy shouldn't affect areas. Submit the answer to check this
+
+## soulation! :
+~~~
+
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Create areas_copy
+areas_copy = list(areas)
+
+# Change areas_copy
+areas_copy[0] = 5.0
+
+# Print areas
+print(areas)
+
+~~~
+## 
+
 
 
